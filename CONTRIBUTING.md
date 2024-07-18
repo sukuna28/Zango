@@ -98,7 +98,7 @@ This command generates the build and places it inside the `backend/src/zango/ass
 Once the build is generated, update the build number in the following file:
 `backend/src/zango/apps/shared/tenancy/templates/app_panel.html`
 
-5. Collecting Static Build for Your Project
+6. Collecting Static Build for Your Project
 
 Before testing the build, collect the static files for your project. Ensure your project is already created and your environment is activated.
 
