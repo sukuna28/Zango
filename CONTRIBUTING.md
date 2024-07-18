@@ -74,7 +74,7 @@ This section describes the general practices for contributing to zango, you can 
 3. Go to the frontend directory of the repository and install the dependencies
 
 ```bash
-    cd zango/frontend
+    cd frontend
     yarn install
 ```
 
@@ -82,6 +82,35 @@ This section describes the general practices for contributing to zango, you can 
 
 ```bash
     yarn dev
+```
+
+5. Generating and Using frontend build in Zango
+To test your frontend app with the Zango framework, follow these steps:
+
+Run the build command:
+
+```bash
+    yarn build
+```
+This command generates the build and places it inside the `backend/src/zango/assets/app_panel/js` directory of Zango.
+
+
+Once the build is generated, update the build number in the following file:
+`backend/src/zango/apps/shared/tenancy/templates/app_panel.html`
+
+5. Collecting Static Build for Your Project
+
+Before testing the build, collect the static files for your project. Ensure your project is already created and your environment is activated.
+
+Change directory to your project:
+```bash
+    cd <project_name>
+```
+
+Collect the static build:
+
+```bash
+    python manage.py collectstatic
 ```
 
 ## Contributing to Documentation
