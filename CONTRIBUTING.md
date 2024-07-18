@@ -63,5 +63,48 @@ This section describes the general practices for contributing to zango, you can 
 
 ## Contributing to frontend
 
+1. Fork the [repository](https://github.com/Healthlane-Technologies/Zango)
+[Go to the repository](https://github.com/Healthlane-Technologies/Zango) and fork it using your own GitHub account.
+
+2. Clone your repository
+```bash
+    git clone git@github.com:YOUR_USERNAME/Zango.git
+```
+
+3. Go to the frontend directory of the repository and install the dependencies
+
+```bash
+    cd zango/frontend
+    yarn install
+```
+
+4. Start the application with mock service worker
+
+```bash
+    yarn dev
+```
+
 ## Contributing to Documentation
 
+We use docusaurus for maintaining znago's documentation
+
+1. Fork the [repository](https://github.com/Healthlane-Technologies/Zango)
+[Go to the repository](https://github.com/Healthlane-Technologies/Zango) and fork it using your own GitHub account.
+
+2. Clone your repository
+```bash
+    git clone git@github.com:YOUR_USERNAME/Zango.git
+```
+
+3. Go to the docs directory of the repository and install the dependencies
+
+```bash
+    cd zango/docs
+    yarn install
+```
+
+4. Start the application
+
+```bash
+    yarn start
+```
