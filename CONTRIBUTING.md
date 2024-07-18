@@ -57,34 +57,25 @@ This section describes the general practices for contributing to zango, you can 
     pip install -e .
 ```
 4. Perform the steps to setup a new project as described in the docs [here](https://www.zango.dev/docs/core/getting-started/installing-zelthy/manual#zango-the-zango-cli)
-5. Start you project
-6. Make changes to Zango and view the changes in your project.
-7. Create a Pull request in the Zango repository.
+5. Start your project
+6. Make changes to Zango and view the changes through your project.
 
 ## Contributing to frontend
 
-1. Fork the [repository](https://github.com/Healthlane-Technologies/Zango)
-[Go to the repository](https://github.com/Healthlane-Technologies/Zango) and fork it using your own GitHub account.
-
-2. Clone your repository
-```bash
-    git clone git@github.com:YOUR_USERNAME/Zango.git
-```
-
-3. Go to the frontend directory of the repository and install the dependencies
+1. Go to the frontend directory of the repository and install the dependencies
 
 ```bash
     cd frontend
     yarn install
 ```
 
-4. Start the application with mock service worker
+2. Start the application with mock service worker
 
 ```bash
     yarn dev
 ```
 
-5. Generating and Using frontend build in Zango
+3. Generating and Using frontend build in Zango
 To test your frontend app with the Zango framework, follow these steps:
 
 Run the build command:
@@ -95,10 +86,10 @@ Run the build command:
 This command generates the build and places it inside the `backend/src/zango/assets/app_panel/js` directory of Zango.
 
 
-Once the build is generated, update the build number in the following file:
+Once the build is generated, update the build version in the following file:
 `backend/src/zango/apps/shared/tenancy/templates/app_panel.html`
 
-6. Collecting Static Build for Your Project
+4. Collecting Static Build for Your Project
 
 Before testing the build, collect the static files for your project. Ensure your project is already created and your environment is activated.
 
@@ -117,22 +108,14 @@ Collect the static build:
 
 We use docusaurus for maintaining znago's documentation
 
-1. Fork the [repository](https://github.com/Healthlane-Technologies/Zango)
-[Go to the repository](https://github.com/Healthlane-Technologies/Zango) and fork it using your own GitHub account.
-
-2. Clone your repository
-```bash
-    git clone git@github.com:YOUR_USERNAME/Zango.git
-```
-
-3. Go to the docs directory of the repository and install the dependencies
+1. Go to the docs directory of the repository and install the dependencies
 
 ```bash
     cd zango/docs
     yarn install
 ```
 
-4. Start the application
+2. Start the application
 
 ```bash
     yarn start
