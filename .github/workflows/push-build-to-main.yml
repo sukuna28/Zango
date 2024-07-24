@@ -29,6 +29,10 @@ jobs:
           cd frontend
           CI=false yarn build
 
+      - name: Remove old build files
+        run: |
+          find backend/src/zango/assets/app_panel/js -name "build.*.min.js" -type f -delete
+
       - name: Setup Git for commit
         run: |
           git config user.name "github-actions"
@@ -44,5 +48,5 @@ jobs:
       #   uses: rtCamp/action-slack-notify@v2
       #   env:
       #     SLACK_WEBHOOK: ${{ secrets.Z_DEPOY_NOTIFS_SLACK_WEBHOOK_URL }}
-      #     SLACK_TITLE: New deployment in documentation environment of ${{ github.event.repository.name }}
+      #     SLACK_TITLE: New push of frontend build in ${{ github.event.repository.name }}
       #     SLACK_CHANNEL: "z-deployment-notifs"
